@@ -107,11 +107,11 @@ const FormDisabledDemo = () => {
 
   const handleChangeSelectTypeProduct = (value) => {
     typeProductRef.current = value;
-    console.log(typeProductRef.current);
+     // console.log(typeProductRef.current);
   };
 
   useEffect(() => {
-    console.log(file);
+    //  console.log(file);
     const uploadFile = () => {
       const name = new Date().getTime() + file.name;
       const storageRef = ref(storage, file.name);
@@ -153,7 +153,7 @@ const FormDisabledDemo = () => {
             ]);
             setListUrl([...listUrl, downloadURL]);
             setLoading(false);
-            console.log(fileList);
+            // console.log(fileList);
           });
 
           // uid: info.file.uid,
@@ -216,14 +216,14 @@ const FormDisabledDemo = () => {
           message: "Thông báo",
           description: "Xóa ảnh thành công",
         });
-        console.log(file);
+        // console.log(file);
         const newFileList = fileList.filter((item) => item.uid !== file.uid);
         setFileList(newFileList);
         const newListUrl = listUrl.filter((item) => item !== file.url);
         setListUrl(newListUrl);
       })
       .catch((error) => {
-        console.log(error);
+        // console.log(error);
         notification.open({
           message: "Thông báo",
           description: "Xóa ảnh thất bại",
@@ -244,7 +244,7 @@ const FormDisabledDemo = () => {
 
   // const actionUpload = (file) => {
   //   imageRef.current = file;
-  //   console.log(imageRef.current);
+  // //   console.log(imageRef.current);
   // };
 
   return (

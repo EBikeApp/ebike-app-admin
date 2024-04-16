@@ -115,7 +115,6 @@ const Tables = () => {
           <div
             style={{
               display: "flex",
-              // flex wrap
               flexWrap: "wrap",
               gap: "10px",
             }}

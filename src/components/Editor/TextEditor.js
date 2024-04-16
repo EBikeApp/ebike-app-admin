@@ -6,7 +6,6 @@ export default function TextEditor({
   productDescription,
   setProductDescription,
 }) {
-
   return (
     <div>
       <ReactQuill
@@ -40,7 +39,6 @@ export default function TextEditor({
           "code-block",
         ]}
       />
-      <button onClick={() => console.log(productDescription)}>Log</button>
     </div>
   );
 }
